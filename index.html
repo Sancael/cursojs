@@ -22,4 +22,102 @@
     console.log(b);
     a = 10;
     console.log(a); 
+
+    var a = 5;
+    var b = a;
+
+    function dameValor(numero) {
+        return numero
+    }
+    console.log(dameValor(a));
+    console.log(dameValor(b));
+
+    var a = 5;
+    var b;
+    b = a;
+    console.log(a);
+    console.log(b);
+
+    //INICIALIZAR VARIABLES
+    var x = 9; //inicializando la variable
+    var miIdioma = "Castellano"; //nomenclatura Camelcase
+    
+    //MAYUSCULAS Y MINUSCULAS
+    var a = 5;
+    var A = 6;
+    console.log(a);
+    console.log(A);
+    var miVariable = "Mal";
+    // console.log(MIVARIABLE); //Lanza Error
+    
+    //SUMA (RESTA ES IGUAL) 
+    var suma;
+    function sumar(sumandoUno, sumandoDos){
+        return sumandoUno + sumandoDos;
+    }
+    suma = sumar(1,2);
+    console.log(suma);
+
+    //MULTIPLICACIÓN (DIVIDIR ES IGUAL PERO CON "/")
+    var resultado; //acabo de descubrir que no hace falta poner var
+    function multiplicar(sumandoUno, sumandoDos){
+        return sumandoUno * sumandoDos;
+    }
+    resultado = multiplicar(-5,30);
+    console.log(resultado);
+
+    cociente = 3 / 0;
+    console.log(cociente); 
+
+    //DECIMALES
+    var miNumeroDecimal = 23.4;
+    console.log(miNumeroDecimal); 
+
+    var producto = 3.4 * 10.4;
+    console.log(producto);
+
+    var cociente = 5.0 / 2.0;
+    console.log(cociente);
+
+    cociente = 2.3 / 6.7;
+    console.log(cociente);
+
+    //resto de una división
+    var resto = 15 % 5;
+    console.log(resto);
+    resto = 5 % 2;     
+    console.log(resto);
+    
+    //Incrementar y reducir el valor de una variable
+    var librosComprados = 105;
+    librosComprados = librosComprados + 1;
+    console.log(librosComprados);
+    librosComprados++;
+    console.log(librosComprados); 
+    librosComprados = librosComprados - 1;
+    console.log(librosComprados);
+    librosComprados--;
+    console.log(librosComprados);
+    librosComprados = librosComprados + 25;
+    console.log(librosComprados);
+    librosComprados += 25;
+    console.log(librosComprados);
+    librosComprados = librosComprados - 25;
+    console.log(librosComprados);
+    librosComprados -= 25;   //Esto es igual para el resto de operaciones
+    console.log(librosComprados);
+
+    //CADENAS DE CARACTERES
+    var nombre = "Santi";
+    var apellido = "Cáceres";
+    function nombreCompleto(nombre, apellido) {
+        return "\"" + nombre + " " + apellido + "\"";
+    }
+    var miNombre = nombreCompleto(nombre, apellido);
+    console.log(miNombre);
+
+
+    
+
+
 </script>
