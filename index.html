@@ -116,8 +116,68 @@
     var miNombre = nombreCompleto(nombre, apellido);
     console.log(miNombre);
 
+    var miMeta;
+    miMeta ='Aprender a programar con "freeCodecamp"';
+    console.log(miMeta);  
+
+    /* Secuencias de escape
+    \' Comilla simple
+    \" Comilla doble
+    \\ Barra invertida
+    \n Línea nueva
+    \r Retorno de carro
+    \t Tabulación
+    \b Retroceso
+    \f Salto de página
+    ...
+    */
+    
+    var mensajeCompleto = "Estoy aprendiendo a programar ";
+    var parteFinal = "Javascript";
+    mensajeCompleto += parteFinal;
+    console.log(mensajeCompleto);
+
+    //longitud de una cadena, caracteres con espacios
+    console.log(mensajeCompleto.length);
+
+    //accediendo al primer caracter de una cadena
+    console.log(mensajeCompleto[0]);
+
+    var miCadena = "Hola Mundo";
+      
+    miCadena[0]="J";
+    console.log(miCadena); //Error no se pueden cambiar caracteres individuales de la cadena
+
+    // console.log(miCadena[230]);  // da undefined
+    function ultimoCaracterCadena(cadena){
+        return cadena[cadena.length - 1];
+    }
+
+    console.log(ultimoCaracterCadena(parteFinal));
+    console.log(ultimoCaracterCadena(miCadena));
+
+    var miArreglo = ["Santi", 42];
+    //console.log(miArreglo);
+
+    var miOtroArreglo = [["Toni", 37],["Joan", 35]];
+    //console.log(miOtroArreglo);
+
+    // console.log(miOtroArreglo[0]); // Toni 37
+    
+    miArreglo[1] = 41;
+    console.log(miArreglo);
+
+    console.log(miOtroArreglo[0][1]); // 37
+    
+
+
 
     
+
+
+
+    
+
 
 
 </script>
