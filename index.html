@@ -168,16 +168,42 @@
     console.log(miArreglo);
 
     console.log(miOtroArreglo[0][1]); // 37
-    
+
+    var miArregloCaracteres = ["Invierno", "Otoño", "Primavera"];
+    miArregloCaracteres.push("Verano");
+    // console.log(miArregloCaracteres);
+    // var elPop = miArregloCaracteres.pop(); // elimina el último elemento y lo retorna!
+    // console.log(miArregloCaracteres);
+    // console.log(elPop);
+    // miArregloCaracteres.shift();
+    // miArregloCaracteres.unshift("Veranillo"); // Agrega al prrincipio del array
+    console.log(miArregloCaracteres);
+
+    function mostrarMensaje() {
+        console.log("Hola Mundo");
+    }
+    // mostrarMensaje();
+    function sumar(sumandoUno, sumandoDos) {
+        var suma = sumandoUno + sumandoDos;
+         return "El resultado de sumar " + sumandoUno + " y " + sumandoDos + " es " + suma;
+    }
+    //console.log(sumar(2,3));
+    // sumar(2345.3,345);
+
+    // dos tipo de variables: globales y locales
+    var miVariableGlobal = 5; //GLOBAL: se puede usar en cualquier lugar, incluidas las funciones
+    // Locales son variable definidas dentro de una función, y solo se puede usar dentro de la misma función
+    function miFuncion() {
+        var miVariableLocal = 4;      // Local si haces un console.log fuera te da undefined
+        console.log(miVariableLocal);
+    }
+
+
+
 
 
 
     
-
-
-
-    
-
 
 
 </script>
