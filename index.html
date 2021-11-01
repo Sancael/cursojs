@@ -198,12 +198,72 @@
         console.log(miVariableLocal);
     }
 
+    function proximoEnLaFila(arr, elemento) {
+        arr.push(elemento);
+        return arr.shift();       
+    } 
 
+    console.log(miArregloCaracteres);
+    console.log(proximoEnLaFila(miArregloCaracteres, 52));
+    console.log(miArregloCaracteres);
+    
+    var miArreglo = [1, 2, 3, 4, 5];
+    console.log("Antes: " + JSON.stringify(miArreglo));
+    console.log(proximoEnLaFila(miArreglo, 6));
+    console.log("Después: " + JSON.stringify(miArreglo)); 
+
+    // console.log(true); True solo se puede escribir de una manera posible 'true' ídem con false
+    // console.log(5 == 4); El operador == es para comparar si es igual
+    // no se deben comparar arreglos con este operador
+    // console.log([1, 2, 3,] == [1, 2, 3]); //da false!
+
+    //operador si ambos tipos de datos son los mismos
+    console.log(9 == '9'); //true porque al comparar con == se convierten al mismo tipo de datos
+    console.log(9 === '9'); // false, === comparador de igualdad estricta
+
+    // operador de desigualdad !=
+    console.log(9 != 9); //false
+    console.log(9 != 6); //true
+    // los arrays/arreglos siguen sin funcionar aquí, los considera obejtos diferentes siempre
+
+    // desigualdad estricta 
+    console.log(1 != "1"); //false
+    console.log(1 !== "1");//true
+    
+    // operador mayor que >
+    console.log(9 > 9); //false
+    console.log(9 > 6); //true
+    // para las cadenas de caracteres las compararía como por orden alfabéico
+    console.log("B" > "A"); //true
+    console.log("ACB" > "ABC"); //true
+    console.log("ACB" > "A"); //true por tener más carateres
+    // para mayor o igual que usamos >=, también podemos usar <, y <=
+    // operador lógico and
+    console.log(true && true);
+    console.log(false && true);
+    console.log(false && false);
+    // Otros operadores lógicos son el OR ||, o bien NOT !
+    var f = 6;
+
+    if (f < 5) {
+        console.log("La condición es verdadera");
+    } else {
+        console.log("La condición es falsa");
+    }
 
 
 
 
     
+
+
+
+
+
+
+
+
+
 
 
 </script>
